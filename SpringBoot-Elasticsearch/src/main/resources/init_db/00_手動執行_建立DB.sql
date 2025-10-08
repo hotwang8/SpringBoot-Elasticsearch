@@ -1,6 +1,0 @@
-USE master; -- 先切到別的DB上才可建立 ACTION_LOG_DB
-
-IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'ACTION_LOG_DB')
-BEGIN
-    CREATE DATABASE ACTION_LOG_DB;
-END
